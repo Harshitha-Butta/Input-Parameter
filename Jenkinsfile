@@ -6,7 +6,7 @@ pipeline{
   stages{
     stage('printing new version'){
       steps{
-      sh 'python3 get_version.py'
+      sh 'python get_version.py'
       }
     }
   }
