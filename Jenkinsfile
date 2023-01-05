@@ -6,7 +6,7 @@ pipeline{
   stages{
     stage('hello'){
       steps{
-      sh 'sudo python --version'
+      sh 'py --version'
       }
     }
     stage('printing new version'){
