@@ -4,6 +4,11 @@ pipeline{
   string description: 'Enter the new version : ', name: 'version', trim: true
   }
   stages{
+    stage('hello'){
+      steps{
+      sh 'python --version'
+      }
+    }
     stage('printing new version'){
       steps{
       sh 'py get_version.py'
