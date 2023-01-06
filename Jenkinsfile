@@ -6,12 +6,12 @@ pipeline{
   stages{
     stage('hello'){
       steps{
-      sh 'py --version'
+      bat 'py --version'
       }
     }
     stage('printing new version'){
       steps{
-      sh 'py get_version.py'
+      bat 'py get_version.py'
       }
     }
   }
