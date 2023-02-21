@@ -1,5 +1,5 @@
 pipeline{
-  agent any
+  agent { label "${agent_label}" }
   parameters {
   string description: 'Enter the new version : ', name: 'version', trim: true
   }
